@@ -18,7 +18,6 @@ The raw dataset was provided by BrightLearn. It was originally in Excel format, 
 
 * Clean and preprocess raw viewership data
 * Identify and remove missing values and duplicates
-* Perform customer-level analysis (e.g., engagement trends, active users)
 * Explore insights using Databricks notebooks
 
 **📂 Dataset Description**
