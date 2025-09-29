@@ -7,10 +7,13 @@ You can access the databricks notebook for the EDA using the link below:
 [view on databricks] (https://dbc-3585e9bf-7c57.cloud.databricks.com/editor/notebooks/852575783857406?o=3909121773184344)
 
 ## OVERVIEW
+
 # 📊 Viewership Data Analysis
 This repository contains viewership data for exploratory data analysis (EDA) and visualization using **Python, and Databricks**. The dataset provides insights into customer engagement, platform usage, and video consumption patterns.
+
 ## 📂 Dataset Description
 The dataset includes the following fields:
+
 **DateID** – Date of activity (YYYYMMDD format)
 
 **CustomerID** – Unique identifier for each customer
@@ -31,6 +34,7 @@ The dataset includes the following fields:
 * Explore insights using Databricks notebooks
   
 ## 🛠️ Technologies Used
+
 **Databricks** – Cloud-based data analysis and visualization
 
 **Pandas & NumPy** – Data wrangling and manipulation
@@ -38,5 +42,6 @@ The dataset includes the following fields:
 **Matplotlib & Seaborn** – Data visualization - to be used visuals in the next phase
 
 ## 🚀 Next Steps
-In the next phase, visual analysis and advanced insights will be developed once graph plotting in Databricks has been fully implemented.
+
+In the next phase, visual analysis and advanced insights will be developed once we have been taken through the matplotlib & seaborn libraries.
 
