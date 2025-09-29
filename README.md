@@ -14,17 +14,17 @@ This repository contains viewership data for exploratory data analysis (EDA) and
 ## 📂 Dataset Description
 The dataset includes the following fields:
 
-**DateID** – Date of activity (YYYYMMDD format)
+* **DateID** – Date of activity (YYYYMMDD format)
 
-**CustomerID** – Unique identifier for each customer
+* **CustomerID** – Unique identifier for each customer
 
-**TotalTimeWatched** – Total viewing time in minutes
+* **TotalTimeWatched** – Total viewing time in minutes
 
-**Platform** – Device or platform used (e.g., Leanback,iOS, web, Android
+* **Platform** – Device or platform used (e.g., Leanback,iOS, web, Android
 
-**PlayEventType** – Type of playback event (e.g., such as LiveTV, CatchUp)
+* **PlayEventType** – Type of playback event (e.g., such as LiveTV, CatchUp)
 
-**VideoTitle** – Title of the video watched
+* **VideoTitle** – Title of the video watched
 
 ## 📂Transformed Data
 
@@ -40,9 +40,9 @@ After data cleaning and transformation, the dataset is ready for analysis. The f
 
 * **Derived columns added:**
 
-* ***TotalTimeWatched_Hours*** – total watch time converted from minutes/seconds to hours.
+- **TotalTimeWatched_Hours** – total watch time converted from minutes/seconds to hours.
 
-* ***DayOfWeekName*** – day of the week for each record in full name format (e.g., Monday, Tuesday).
+- **DayOfWeekName** – day of the week for each record in full name format (e.g., Monday, Tuesday).
 
 This transformed dataset provides a clean and structured foundation for time trend analysis, customer behavior analysis, and visualization on Databricks using Python.
 
