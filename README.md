@@ -18,11 +18,11 @@ The dataset includes the following fields:
 
 **CustomerID** – Unique identifier for each customer
 
-**TotalTimeWatched** – Total viewing time (in seconds/minutes)
+**TotalTimeWatched** – Total viewing time in minutes
 
-**Platform** – Device or platform used (e.g., mobile, web, TV)
+**Platform** – Device or platform used (e.g., Leanback,iOS, web, Android
 
-**PlayEventType** – Type of playback event (e.g., play, pause, stop)
+**PlayEventType** – Type of playback event (e.g., such as LiveTV, CatchUp)
 
 **VideoTitle** – Title of the video watched
 
@@ -37,7 +37,9 @@ The dataset includes the following fields:
 
 **Databricks** – Cloud-based data analysis and visualization
 
-**Pandas & NumPy** – Data wrangling and manipulation
+**Python** - Used as a programming language to transform, clean, and visualize viewership data
+
+**Pandas & NumPy** – Libraries used for Data wrangling and manipulation
 
 **Matplotlib & Seaborn** – Data visualization - to be used visuals in the next phase
 
