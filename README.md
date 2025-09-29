@@ -33,10 +33,14 @@ The dataset includes the following fields:
 After data cleaning and transformation, the dataset is ready for analysis. The following steps were applied:
 
 - **Duplicates removed:** Ensured only unique rows remain for accurate analysis.
+  
 - **Data type conversion:** `TotalTimeWatched` converted to numeric (`double`) and `DateID` converted to date format.
+  
 - **Malformed values handled:** Rows with invalid `TotalTimeWatched` were removed.
+  
 - **Derived columns added:**
   - **TotalTimeWatched_Hours** – total watch time converted from minutes/seconds to hours.
+
   - **DayOfWeekName** – day of the week for each record in full name format (e.g., Monday, Tuesday).
 
 This transformed dataset provides a clean and structured foundation for **time trend analysis, customer behavior analysis, and visualization** on Databricks using Python.
