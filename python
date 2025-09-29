@@ -1,3 +1,4 @@
+## Import Libraries
 # a code to import pandas library which is used for handling and analyzing tabular data (rows and columns), making it easy to clean, transform, and explore datasets
 import pandas as pd
 
@@ -11,31 +12,35 @@ import matplotlib.pyplot as plt
 #It is built on top of matplotlib and provides a high-level interface for creating various types of plots
 import seaborn as sns
 
+## Load Data
 import pandas as pd
-
 data_path = "/Workspace/Users/tselale2002@gmail.com/Viewership Analysis -Data.csv"
 data = pd.read_csv(
     data_path,
-    on_bad_lines='skip'
-)
+    on_bad_lines='skip')
 display(data)
 data.describe()
 
+## Shape of our dataset
+# Counting number of rows and columns
 data.shape
 
-# Count total number of unique CustomerId
+## Data Quality Check
+# Look at the first row of our dataset
+print(df.head())
 
-df.select("CustomerID").distinct().count()
+# Understand the dataset - this gives you an overview of datatypes, and missing values.
+df.printSchema()
+display(df)
 
-from pyspark.sql.functions import col, count, when
+#the table shows the datatypes present in the dataset, and "nullable=true" shows that our data can allow null values, not meaning that we have null values
 
 # Count missing values (nulls) per column
 missing_values = df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns])
 
-# Display the result
+# Display the result of missing values
 display(missing_values)
-
-# the resulst shows that we dont have any missing  values in the dataset
+# the result shows that we dont have any missing  values in the dataset
 
 # Count total duplicate rows,it checks for rows where all column values are identical and counts how many such duplicate rows exist.
 duplicate_count = df.groupBy(df.columns).count().filter(col("count") > 1).agg({"count": "sum"}).withColumnRenamed("sum(count)", "duplicate_count")
@@ -43,7 +48,6 @@ display(duplicate_count)
 
 # Remove duplicates based on all columns
 df_clean = df.dropDuplicates()
-
 # Display the cleaned DataFrame
 display(df_clean)
 
@@ -54,6 +58,5 @@ print("Rows before removing duplicates:", df.count())
 df_clean = df.dropDuplicates()
 print("Rows after removing duplicates:", df_clean.count())
 
-#Univariate Analysis
 # Number of unique customers
 df.select("CustomerID").distinct().count()
