@@ -5,6 +5,13 @@ You can access the databricks notebook for the EDA using the link below:
 ## OVERVIEW
 # 📊 Viewership Data Analysis
 This repository contains viewership data for exploratory data analysis (EDA) and visualization using **Python, and Databricks**. The dataset provides insights into customer engagement, platform usage, and video consumption patterns.
+
+## 🎯 Purpose
+* Clean and preprocess raw viewership data
+* Identify and remove missing values and duplicates
+* Perform customer-level analysis (e.g., engagement trends, active users)
+* Explore insights using Databricks notebooks
+  
 ## 📂 Dataset Description
 The dataset includes the following fields:
 
@@ -38,14 +45,7 @@ After data cleaning and transformation, the dataset is ready for analysis. The f
   - **DayOfWeekName** – day of the week for each record in full name format (e.g., Monday, Tuesday).
 
 This transformed dataset provides a clean and structured foundation for **time trend analysis, customer behavior analysis, and visualization** on Databricks using Python.
-
-## 🎯 Purpose
-* Clean and preprocess raw viewership data
-* Identify and remove missing values and duplicates
-* Perform customer-level analysis (e.g., engagement trends, active users)
-* Create time-series visualizations of watch behavior
-* Explore insights using Databricks notebooks
-  
+ 
 ## 🛠️ Technologies Used
 
 **Databricks** – Cloud-based data analysis and visualization
