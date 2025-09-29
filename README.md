@@ -12,10 +12,15 @@ This repository contains viewership data for exploratory data analysis (EDA) and
 ## 📂 Dataset Description
 The dataset includes the following fields:
 **DateID** – Date of activity (YYYYMMDD format)
+
 **CustomerID** – Unique identifier for each customer
+
 **TotalTimeWatched** – Total viewing time (in seconds/minutes)
+
 **Platform** – Device or platform used (e.g., mobile, web, TV)
+
 **PlayEventType** – Type of playback event (e.g., play, pause, stop)
+
 **VideoTitle** – Title of the video watched
 
 ## 🎯 Purpose
@@ -24,10 +29,14 @@ The dataset includes the following fields:
 * Perform customer-level analysis (e.g., engagement trends, active users)
 * Create time-series visualizations of watch behavior
 * Explore insights using Databricks notebooks
+  
 ## 🛠️ Technologies Used
 **Databricks** – Cloud-based data analysis and visualization
+
 **Pandas & NumPy** – Data wrangling and manipulation
+
 **Matplotlib & Seaborn** – Data visualization - to be used visuals in the next phase
+
 ## 🚀 Next Steps
 In the next phase, visual analysis and advanced insights will be developed once graph plotting in Databricks has been fully implemented.
 
